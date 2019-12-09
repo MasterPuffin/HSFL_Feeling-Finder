@@ -28,39 +28,104 @@
 		<canvas id="canvas"></canvas>
 	</div>
 	<script>
+    var colors = {
+      blue: "#007BFF",
+      green: "#28A745",
+      red: "#DC3545",
+      orange: "#FFC107",
+      aqua: "#17A2B8"
+    };
+
+    function getRandomMood() {
+      var moods = [0,1,1,2,2,2,3,3,4];
+      return moods[Math.floor(Math.random() * moods.length)];
+    }
+    /*
+    Stimmung
+    Stress
+    Schlaf
+    Ernährung
+    Bewegung
+    */
 		var lineChartData = {
-			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			labels: ['Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Gestern', 'Heute'],
 			datasets: [{
-				label: 'My First dataset',
-				borderColor: window.chartColors.red,
-				backgroundColor: window.chartColors.red,
+				label: 'Stimmung',
+				borderColor: colors.red,
+				backgroundColor: colors.red,
 				fill: false,
 				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood()
 				],
-				yAxisID: 'y-axis-1',
-			}, {
-				label: 'My Second dataset',
-				borderColor: window.chartColors.blue,
-				backgroundColor: window.chartColors.blue,
+				yAxisID: 'ax-stimmung',
+			},{
+				label: 'Stress',
+				borderColor: colors.orange,
+				backgroundColor: colors.orange,
 				fill: false,
 				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood()
 				],
-				yAxisID: 'y-axis-2'
-			}]
+				yAxisID: 'ax-stress',
+			},{
+				label: 'Schlaf',
+				borderColor: colors.blue,
+				backgroundColor: colors.blue,
+				fill: false,
+				data: [
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood()
+				],
+				yAxisID: 'ax-schlaf',
+			},{
+				label: 'Ernährung',
+				borderColor: colors.green,
+				backgroundColor: colors.green,
+				fill: false,
+				data: [
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood()
+				],
+				yAxisID: 'ax-ernaehrung',
+			},{
+				label: 'Bewegung',
+				borderColor: colors.aqua,
+				backgroundColor: colors.aqua,
+				fill: false,
+				data: [
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood(),
+					getRandomMood()
+				],
+				yAxisID: 'ax-bewegung',
+			}
+      ]
 		};
 
 		window.onload = function() {
@@ -77,17 +142,32 @@
 							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
 							display: true,
 							position: 'left',
-							id: 'y-axis-1',
-						}, {
+							id: 'ax-stimmung',
+              ticks: {
+                min: 0,
+                max: 4,
+                stepSize: 1
+            }
+						},{
 							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-							display: true,
+							display: false,
+							position: 'left',
+							id: 'ax-stress',
+						},{
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: false,
+							position: 'left',
+							id: 'ax-schlaf',
+						},{
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: false,
+							position: 'left',
+							id: 'ax-ernaehrung',
+						},{
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: false,
 							position: 'right',
-							id: 'y-axis-2',
-
-							// grid line settings
-							gridLines: {
-								drawOnChartArea: false, // only want the grid lines for one axis to show up
-							},
+							id: 'ax-bewegung',
 						}],
 					}
 				}
