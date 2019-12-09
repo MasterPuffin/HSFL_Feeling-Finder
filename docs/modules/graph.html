@@ -30,10 +30,15 @@
 	<script>
     var colors = {
       blue: "#007BFF",
+      // blue: 'rgba(0, 123, 255, 0.2)',
       green: "#28A745",
+      // green: 'rgba(40, 167, 69, 0.2)',
       red: "#DC3545",
-      orange: "#FFC107",
+      // red: 'rgba(220, 53, 69, 1)',
+      orange: "#efaf00",
+      // orange: 'rgba(239, 175, 0, 0.2)',
       aqua: "#17A2B8"
+      // aqua: 'rgba(23, 162, 184, 0.2)',
     };
 
     function getRandomMood() {
@@ -78,6 +83,7 @@
 					getRandomMood(),
 					getRandomMood()
 				],
+        hidden: true,
 				yAxisID: 'ax-stress',
 			},{
 				label: 'Schlaf',
@@ -93,6 +99,7 @@
 					getRandomMood(),
 					getRandomMood()
 				],
+        hidden: true,
 				yAxisID: 'ax-schlaf',
 			},{
 				label: 'Ernährung',
@@ -108,6 +115,7 @@
 					getRandomMood(),
 					getRandomMood()
 				],
+        hidden: true,
 				yAxisID: 'ax-ernaehrung',
 			},{
 				label: 'Bewegung',
@@ -123,6 +131,7 @@
 					getRandomMood(),
 					getRandomMood()
 				],
+        hidden: true,
 				yAxisID: 'ax-bewegung',
 			}
       ]
