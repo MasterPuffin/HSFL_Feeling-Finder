@@ -146,7 +146,23 @@
               ticks: {
                 min: 0,
                 max: 4,
-                stepSize: 1
+                stepSize: 1,
+                callback: function(label, index, labels) {
+                    switch (label) {
+                        case 0:
+                            return '😭';
+                        case 1:
+                            return '😔';
+                        case 2:
+                            return '😐';
+                        case 3:
+                            return '😃';
+                        case 4:
+                            return '😀';
+                        case 5:
+                            return 'FIVE';
+                    }
+                }
             }
 						},{
 							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
