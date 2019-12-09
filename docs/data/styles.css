@@ -64,49 +64,49 @@
   text-align:left;
 }
 .headline {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:24px;
   color:rgba(0, 0, 0, 0.866666666666667);
 }
 .title {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:20px;
   color:rgba(0, 0, 0, 0.866666666666667);
 }
 .subheader {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:16px;
   color:rgba(0, 0, 0, 0.866666666666667);
 }
 .body_2___menu {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:14px;
   color:rgba(0, 0, 0, 0.866666666666667);
 }
 .body_1 {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   color:rgba(0, 0, 0, 0.866666666666667);
 }
 .caption {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:12px;
   color:rgba(0, 0, 0, 0.537254901960784);
 }
 .primary_text_dark {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:14px;
@@ -114,77 +114,77 @@
   text-align:left;
 }
 .secondary_text_dark {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   color:rgba(0, 0, 0, 0.537254901960784);
 }
 .disabled_text_dark {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   color:rgba(0, 0, 0, 0.258823529411765);
 }
 .primary_text_light {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   color:#FFFFFF;
 }
 .secondary_text_light {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   color:rgba(255, 255, 255, 0.698039215686274);
 }
 .disabled_text_light {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:14px;
   color:rgba(255, 255, 255, 0.298039215686275);
 }
 .flat_button {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:14px;
   color:#2196F3;
 }
 .flat_button_pressed {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:14px;
   color:#2196F3;
 }
 .flat_button_disabled {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:14px;
   color:rgba(0, 0, 0, 0.258823529411765);
 }
 .raised_button {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:14px;
   color:#FFFFFF;
 }
 .raised_button_pressed {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:14px;
   color:#FFFFFF;
 }
 .raised_button_disabled {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:14px;
@@ -193,7 +193,7 @@
 .status_bar_dark {
 }
 .title_bar_dark {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:20px;
@@ -203,7 +203,7 @@
 .content_bg_dark {
 }
 .dialog_dark {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:20px;
@@ -213,7 +213,7 @@
 .status_bar_light {
 }
 .title_bar_light {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:20px;
@@ -223,7 +223,7 @@
 .content_bg_light {
 }
 .dialog_light {
-  font-family:'Roboto Medium', 'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
   font-style:normal;
   font-size:20px;
@@ -231,7 +231,7 @@
   text-align:left;
 }
 .hint_text {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:16px;
@@ -258,7 +258,7 @@
 .contact_avatar {
 }
 .divider {
-  font-family:'Roboto';
+  font-family:'Roboto Regular', 'Roboto';
   font-weight:400;
   font-style:normal;
   font-size:14px;
