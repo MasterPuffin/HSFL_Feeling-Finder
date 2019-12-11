@@ -1,37 +1,19 @@
 <!doctype html>
-<html>
+<html lang="de">
+	<head>
+		<title>Chart</title>
+		<script src="dist/charts.min.js"></script>
+		<script src="dist/utils.js"></script>
+		<script src="graph.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 
-<head>
-    <title>Line Chart Multiple Axes</title>
-    <script src="dist/charts.min.js"></script>
-    <script src="dist/utils.js"></script>
-    <script src="graph.js"></script>
-    <style>
-        canvas {
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-        }
-
-        body {
-            margin: 0px;
-        }
-
-        .main {
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-    </style>
-</head>
-
-<body>
-<div class="main">
-    <canvas id="canvas"></canvas>
-</div>
-<script>
-    graph(true);
-</script>
-</body>
-
+	<body>
+		<div class="main">
+			<canvas id="canvas"></canvas>
+		</div>
+		<script>
+			graph(true);
+		</script>
+	</body>
 </html>

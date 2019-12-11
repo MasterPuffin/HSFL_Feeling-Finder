@@ -119,6 +119,7 @@ function graph(showLegend = false) {
                 hoverMode: 'index',
                 stacked: false,
                 legend: {
+                    display: showLegend,
                     position: 'bottom',
                     labels: {
                         fontColor: "black",
