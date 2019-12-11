@@ -148,6 +148,13 @@
   font-size:14px;
   color:rgba(255, 255, 255, 0.298039215686275);
 }
+.float_button {
+  font-family:'Roboto Regular', 'Roboto';
+  font-weight:500;
+  font-style:normal;
+  font-size:24px;
+  color:#FFFFFF;
+}
 .flat_button {
   font-family:'Roboto Regular', 'Roboto';
   font-weight:500;
@@ -245,6 +252,14 @@
   text-align:left;
 }
 .line {
+}
+.text_field {
+  color:#000000;
+  text-align:left;
+}
+.text_area {
+  color:#000000;
+  text-align:left;
 }
 .image1 {
   color:#000000;
