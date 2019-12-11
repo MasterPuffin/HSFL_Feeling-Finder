@@ -24,7 +24,7 @@ function graph(showLegend = false) {
     Ernährung
     Bewegung
     */
-    var lineChartData = {
+    const lineChartData = {
         labels: ['Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Gestern', 'Heute'],
         datasets: [{
             label: 'Stimmung',
@@ -110,7 +110,7 @@ function graph(showLegend = false) {
     };
 
     window.onload = function () {
-        var ctx = document.getElementById('canvas').getContext('2d');
+        const ctx = document.getElementById('canvas').getContext('2d');
         window.myLine = Chart.Line(ctx, {
             data: lineChartData,
             options: {
@@ -137,7 +137,7 @@ function graph(showLegend = false) {
                             min: 0,
                             max: 4,
                             stepSize: 1,
-                            callback: function (label, index, labels) {
+                            callback: function (label) {
                                 switch (label) {
                                     case 0:
                                         return '😭';
