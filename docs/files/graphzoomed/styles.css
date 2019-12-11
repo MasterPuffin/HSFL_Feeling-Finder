@@ -48,9 +48,9 @@
   border-width:0px;
   position:absolute;
   left:0px;
-  top:0px;
+  top:24px;
   width:356px;
-  height:636px;
+  height:612px;
 }
 #u114_input {
   border-width:2px;
@@ -58,6 +58,6 @@
   left:0px;
   top:0px;
   width:356px;
-  height:636px;
+  height:612px;
   overflow:auto;
 }
