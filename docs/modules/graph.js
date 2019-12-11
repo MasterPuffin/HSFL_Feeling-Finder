@@ -4,20 +4,27 @@ function getRandomMood() {
 }
 
 let data = {};
-data.stimmung = [];
-data.stress = [];
-data.schlaf = [];
-data.ernaehrung = [];
-data.bewegung = [];
 
-for (let i = 0; i<7; i++) {
-    data.stimmung.push(getRandomMood());
-    data.stress.push(getRandomMood());
-    data.schlaf.push(getRandomMood());
-    data.ernaehrung.push(getRandomMood());
-    data.bewegung.push(getRandomMood());
+if (sessionStorage.getItem("moodData")) {
+    data = JSON.parse(sessionStorage.getItem("moodData"));
+} else {
+    data.stimmung = [];
+    data.stress = [];
+    data.schlaf = [];
+    data.ernaehrung = [];
+    data.bewegung = [];
+
+    for (let i = 0; i<7; i++) {
+        data.stimmung.push(getRandomMood());
+        data.stress.push(getRandomMood());
+        data.schlaf.push(getRandomMood());
+        data.ernaehrung.push(getRandomMood());
+        data.bewegung.push(getRandomMood());
+    }
+    sessionStorage.setItem("moodData", JSON.stringify(data));
 }
-console.log(data);
+
+// console.log(data);
 
 function graph(showLegend = false) {
     const colors = {
