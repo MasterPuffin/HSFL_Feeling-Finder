@@ -1,3 +1,24 @@
+function getRandomMood() {
+    const moods = [0, 1, 1, 2, 2, 2, 3, 3, 4];
+    return moods[Math.floor(Math.random() * moods.length)];
+}
+
+let data = {};
+data.stimmung = [];
+data.stress = [];
+data.schlaf = [];
+data.ernaehrung = [];
+data.bewegung = [];
+
+for (let i = 0; i<7; i++) {
+    data.stimmung.push(getRandomMood());
+    data.stress.push(getRandomMood());
+    data.schlaf.push(getRandomMood());
+    data.ernaehrung.push(getRandomMood());
+    data.bewegung.push(getRandomMood());
+}
+console.log(data);
+
 function graph(showLegend = false) {
     const colors = {
         blue: "#007BFF",
@@ -11,11 +32,6 @@ function graph(showLegend = false) {
         aqua: "#17A2B8"
         // aqua: 'rgba(23, 162, 184, 0.2)',
     };
-
-    function getRandomMood() {
-        const moods = [0, 1, 1, 2, 2, 2, 3, 3, 4];
-        return moods[Math.floor(Math.random() * moods.length)];
-    }
 
     /*
     Stimmung
@@ -31,30 +47,14 @@ function graph(showLegend = false) {
             borderColor: colors.red,
             backgroundColor: colors.red,
             fill: false,
-            data: [
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood()
-            ],
+            data: data.stimmung,
             yAxisID: 'ax-stimmung',
         }, {
             label: 'Stress',
             borderColor: colors.orange,
             backgroundColor: colors.orange,
             fill: false,
-            data: [
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood()
-            ],
+            data: data.stress,
             hidden: true,
             yAxisID: 'ax-stress',
         }, {
@@ -62,15 +62,7 @@ function graph(showLegend = false) {
             borderColor: colors.blue,
             backgroundColor: colors.blue,
             fill: false,
-            data: [
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood()
-            ],
+            data: data.schlaf,
             hidden: true,
             yAxisID: 'ax-schlaf',
         }, {
@@ -78,15 +70,7 @@ function graph(showLegend = false) {
             borderColor: colors.green,
             backgroundColor: colors.green,
             fill: false,
-            data: [
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood()
-            ],
+            data: data.ernaehrung,
             hidden: true,
             yAxisID: 'ax-ernaehrung',
         }, {
@@ -94,15 +78,7 @@ function graph(showLegend = false) {
             borderColor: colors.aqua,
             backgroundColor: colors.aqua,
             fill: false,
-            data: [
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood(),
-                getRandomMood()
-            ],
+            data: data.bewegung,
             hidden: true,
             yAxisID: 'ax-bewegung',
         }
